@@ -1,0 +1,36 @@
+{
+  "name": "@vue-storefront/medusa",
+  "version": "0.0.1",
+  "private": true,
+  "sideEffects": false,
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "dev": "rollup -c -w",
+    "precommit": "lint-staged",
+    "prepublish": "yarn build",
+    "test": "jest",
+    "update:check": "ncu",
+    "update:update": "ncu -u"
+  },
+  "dependencies": {
+    "@vue-storefront/medusa-api": "0.0.1",
+    "@vue-storefront/core": "~2.5.5",
+    "cookie-universal": "^2.1.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup-plugin-typescript2": "^0.31.2"
+  },
+  "peerDependencies": {
+    "@nuxtjs/composition-api": "^0.31.0"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

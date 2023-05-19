@@ -1,0 +1,14 @@
+{
+  "projectName": "medusa",
+  "projectOwner": "vuestorefront-community",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [],
+  "contributorsPerLine": 5
+}
